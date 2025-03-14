@@ -1,12 +1,46 @@
-# React + Vite
+# Supabase React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup Instructions
 
-Currently, two official plugins are available:
+Follow these steps to set up the project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/ezekielkibiego/supabase-react.git
+    cd supabase-react
+    ```
 
-## Expanding the ESLint configuration
+2. **Install Dependencies**:
+    Ensure you have Node.js and npm installed. Then run:
+    ```bash
+    npm install
+    ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Set Up Environment Variables**:
+    Create a `.env` file in the root directory and add the following variables:
+    ```
+    REACT_APP_SUPABASE_URL=your-supabase-url
+    REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
+    ```
+    Replace `your-supabase-url` and `your-supabase-anon-key` with your Supabase project credentials.
+
+4. **Start the Development Server**:
+    Run the following command to start the app:
+    ```bash
+    npm run dev
+    ```
+
+5. **Access the Application**:
+    Open your browser and navigate to `http://localhost:5173`.
+
+## What the App Does
+
+This project is a React application integrated with Supabase. It demonstrates features such as user authentication, database interactions, and real-time updates.
+
+## Additional Information
+
+- **Technologies Used**: React, Supabase, JavaScript, CSS.
+- **Contributing**: Feel free to fork the repository and submit pull requests.
+- **License**: This project is licensed under the MIT License.
+
+For further details, refer to the official [Supabase documentation](https://supabase.com/docs).
